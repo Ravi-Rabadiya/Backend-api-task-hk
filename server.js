@@ -9,7 +9,7 @@ const port = process.env.PORT || 5000;
 // ✅ Use CORS with options BEFORE middleware/router
 server.use(
   cors({
-    origin: 'https://task-management-system-sandy-mu.vercel.app',
+    origin: '*',
     methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization'],
   })
